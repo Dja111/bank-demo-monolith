@@ -1,4 +1,9 @@
 package com.bankdemo.service;
 
-public class AuthService {
+import com.bankdemo.model.User;
+
+public interface UserService {
+    User register(User user);
+
+    User getUserById(Long id) throws Exception;
 }
